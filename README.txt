@@ -42,12 +42,12 @@ Tested with *Plone 3.3*.
 TODO
 ====
 
-* More tests (also not GMT specific)
-* Right now the calculation of dates is crappy. Think about replace the ``DateTime `` use with
+* More tests (the few there are GMT+1 specific)
+* Right now the calculation of dates is crappy. Think about replace the ``DateTime`` use with
   standard ``datetime`` module.
-  
   Are Collection still working with ``datetime``?
-* Plone 4 compatibility
+* Adding Plone 4 compatibility
+* Translations issues (I fear will be worst when using on Plone 4)
 
 Credits
 =======

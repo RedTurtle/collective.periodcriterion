@@ -23,28 +23,28 @@ def getBounds(date, value):
         >>> from collective.periodcriterion.criteria import getBounds
         >>> from DateTime import DateTime
         >>> getBounds(DateTime('2011/02/14'), 'today')
-        (DateTime('2011/02/14'), DateTime('2011/02/14 23:59:59'))
+        (DateTime('2011/02/14'), DateTime('2011/02/14 23:59:59 GMT+1'))
 
         Hour is ignored completly
         
         >>> getBounds(DateTime('2011/02/14 23:59:59'), 'today')
-        (DateTime('2011/02/14'), DateTime('2011/02/14 23:59:59'))
+        (DateTime('2011/02/14'), DateTime('2011/02/14 23:59:59 GMT+1'))
         
         Check month
 
         >>> getBounds(DateTime('2011/02/14'), 'this_month')
-        (DateTime('2011/02/01'), DateTime('2011/02/28 23:59:59''))
+        (DateTime('2011/02/01'), DateTime('2011/02/28 23:59:59 GMT+1'))
         >>> getBounds(DateTime('2011/02/01'), 'this_month')
-        (DateTime('2011/02/01'), DateTime('2011/02/28 23:59:59''))
+        (DateTime('2011/02/01'), DateTime('2011/02/28 23:59:59 GMT+1'))
         >>> getBounds(DateTime('2011/02/28'), 'this_month')
-        (DateTime('2011/02/01'), DateTime('2011/02/28 23:59:59''))
+        (DateTime('2011/02/01'), DateTime('2011/02/28 23:59:59 GMT+1'))
         >>> getBounds(DateTime('2011/12/25'), 'this_month')
-        (DateTime('2011/12/01'), DateTime('2011/12/31 23:59:59''))
+        (DateTime('2011/12/01'), DateTime('2011/12/31 23:59:59 GMT+1'))
 
         Check year
 
         >>> getBounds(DateTime('2011/02/02'), 'this_year')
-        (DateTime('2011/01/01'), DateTime('2011/12/31 23:59:59''))
+        (DateTime('2011/01/01'), DateTime('2011/12/31 23:59:59 GMT+1'))
 
 
     """

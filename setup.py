@@ -5,7 +5,7 @@ version = '0.1.0'
 
 setup(name='collective.periodcriterion',
       version=version,
-      description='Additional date criterion for Plone collections, that add the concept of "this year", "this month", "today"',
+      description='Additional date criterion for Plone collections, that add concepts of "today", "this month", "this year"',
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -13,6 +13,7 @@ setup(name='collective.periodcriterion',
       classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
+        "Development Status :: 4 - Beta",
         ],
       keywords='plone plonegov collection criterion',
       author='RedTurtle Technology',
