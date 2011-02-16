@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.periodcriterion">
+
+  <five:registerPackage package="." initialize=".initialize" />
+  <i18n:registerTranslations directory="locales" />
+
+  <!-- Register the installation GenericSetup extension profile -->
+  <genericsetup:registerProfile
+      name="default"
+      title="Period Criterion for Collections"
+      directory="profiles/default"
+      description="Additional date criterion for Collection content type"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  
+</configure>

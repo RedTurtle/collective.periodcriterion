@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<atcttool
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <topic_indexes i18n:domain="plone">
+  <index name="created" description="The time and date an item was created"
+     enabled="True" friendlyName="Creation Date"
+     i18n:attributes="description; friendlyName">
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+   <criteria>ATPeriodCriteria</criteria>
+  </index>
+  <index name="Date"
+     description="The time and date an item was last modified"
+     enabled="False" friendlyName="Modification Date"
+     i18n:attributes="description; friendlyName" purge="False">
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+   <criteria>ATPeriodCriteria</criteria>
+  </index>
+  <index name="effective"
+     description="The time and date an item becomes publicly available"
+     enabled="True" friendlyName="Effective Date"
+     i18n:attributes="description; friendlyName" purge="False">
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+   <criteria>ATPeriodCriteria</criteria>
+  </index>
+  <index name="end" description="The end date and time of an event"
+     enabled="True" friendlyName="End Date"
+     i18n:attributes="description; friendlyName" purge="False">
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+   <criteria>ATPeriodCriteria</criteria>
+  </index>
+  <index name="expires"
+     description="The time and date an item is no longer publicly available"
+     enabled="True" friendlyName="Expiration Date"
+     i18n:attributes="description; friendlyName" purge="False">
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+   <criteria>ATPeriodCriteria</criteria>
+  </index>
+  <index name="start" description="The start date and time of an event"
+     enabled="True" friendlyName="Start Date"
+     i18n:attributes="description; friendlyName">
+   <criteria>ATFriendlyDateCriteria</criteria>
+   <criteria>ATDateRangeCriterion</criteria>
+   <criteria>ATPeriodCriteria</criteria>
+  </index>
+ </topic_indexes>
+</atcttool>

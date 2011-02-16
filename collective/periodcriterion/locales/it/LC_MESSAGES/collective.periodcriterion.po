@@ -1,0 +1,52 @@
+# Italian translation for collective.periodcriterion
+# Luca Fabbri <keulL@redturtle.it>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-02-16 15:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Luca Fabbri <keulL@redturtle.it>, 2011.\n"
+"Language-Team: RedTurtle Technology <sviluppplone@redturtle.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: it\n"
+"Language-Name: Italian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.periodcriterion\n"
+
+#: ../profiles/default/types/ATPeriodCriteria.xml
+msgid "A relative date criterion with defined bounds"
+msgstr "Una data relativa con limiti definiti"
+
+#: ../profiles/default/types/ATPeriodCriteria.xml
+msgid "Period Date Criteria"
+msgstr "Criterio Periodo di Data"
+
+#: ../criteria.py:99
+msgid "Period of time"
+msgstr "Periodo di tempo"
+
+#: ../criteria.py:71
+msgid "This month"
+msgstr "Questo mese"
+
+#: ../criteria.py:72
+msgid "This year"
+msgstr "Quest'anno"
+
+#: ../criteria.py:70
+msgid "Today"
+msgstr "Oggi"
+
+#. Default: "Select the period inside which the date must be."
+#: ../criteria.py:83
+msgid "help_date_criteria_value"
+msgstr "Seleziona il periodo entro il quale deve essere la data."
+
+#. Default: "Which period"
+#: ../criteria.py:82
+msgid "label_date_criteria_value"
+msgstr "Quale periodo"
+
