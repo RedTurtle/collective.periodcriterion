@@ -88,7 +88,7 @@ class ATPeriodCriteria(ATBaseCriterion):
     """A relative date criterion"""
 
     implements(IATPeriodCriteria)
-    __implements__ = ATBaseCriterion.__implements__ + (IATTopicSearchCriterion, )
+    __implements__ = getattr(ATBaseCriterion, '__implements__', tuple()) + (IATTopicSearchCriterion, )
 
     security       = ClassSecurityInfo()
     schema         = PeriodCriteriaSchema

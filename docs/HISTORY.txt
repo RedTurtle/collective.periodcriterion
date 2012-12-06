@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.2.0 (Unreleased)
+------------------
+
+* Plone 4.2 compatibility (but still with old-style Collection)
+  [keul]
+
 0.1.0 (2011-02-16)
 ------------------
 
