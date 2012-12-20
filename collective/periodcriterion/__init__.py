@@ -1,5 +1,7 @@
   # -*- extra stuff goes here -*- 
 
+import logging
+
 from zope.i18nmessageid import MessageFactory
 from collective.periodcriterion import config
 
@@ -7,6 +9,7 @@ from Products.Archetypes import atapi
 from Products.CMFCore import utils
 
 periodCriterionMessageFactory = MessageFactory('collective.periodcriterion')
+logger = logging.getLogger("collective.periodcriterion")
 
 def initialize(context):
     """Initializer called when used as a Zope 2 product."""
