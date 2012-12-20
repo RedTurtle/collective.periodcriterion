@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.2.0 (Unreleased)
+0.2.0 (2012-12-20)
 ------------------
 
 * Plone 4.2 compatibility for old and new Collection content type
