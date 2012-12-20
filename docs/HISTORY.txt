@@ -8,7 +8,7 @@ Changelog
   [keul]
 * More pythoninc dates generation, using DateTime native methods
   [keul]
-* Added a proper uninstall profile
+* Added a proper uninstall profile (it works only partially, and only on Plone 4.3)
   [keul]
 * Support for "Site Administrator" role
   [keul]

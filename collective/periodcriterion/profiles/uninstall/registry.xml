@@ -1,6 +1,7 @@
 <registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
           i18n:domain="collective.periodcriterion">
 
+    <!-- work only on Plone 4.3 -->
     <records interface="plone.app.querystring.interfaces.IQueryOperation"
              prefix="plone.app.querystring.operation.date.this_month"
 			 remove="true">
@@ -11,6 +12,7 @@
 			 remove="true">
     </records>
 
+    <!-- seems impossible to clean those values -->
     <records interface="plone.app.querystring.interfaces.IQueryField"
              prefix="plone.app.querystring.field.created">
        <value key="operations" purge="False">
