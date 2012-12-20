@@ -15,5 +15,14 @@
       description="Add to Plone Collection content type the &quot;this month&quot; and &quot;this year&quot; criteria"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Period Criterion for Collections: uninstall"
+      directory="profiles/uninstall"
+      description="Uninstall collective.periodcriterion"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
   
 </configure>
