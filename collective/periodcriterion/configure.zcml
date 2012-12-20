@@ -12,7 +12,7 @@
       name="default"
       title="Period Criterion for Collections"
       directory="profiles/default"
-      description="Additional date criterion for Collections that add concepts of 'today', 'this month' and 'this year'"
+      description="Add to Plone Collection content type the &quot;this month&quot; and &quot;this year&quot; criteria"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   

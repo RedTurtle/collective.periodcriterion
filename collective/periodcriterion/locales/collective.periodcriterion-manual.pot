@@ -20,5 +20,5 @@ msgstr ""
 msgid "Period Criterion for Collections"
 msgstr ""
 
-msgid "Additional date criterion for Collections that add concepts of 'today', 'this month' and 'this year'"
+msgid "Add to Plone Collection content type the \"this month\" and \"this year\" criteria"
 msgstr ""

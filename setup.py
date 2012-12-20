@@ -7,8 +7,7 @@ tests_require=['zope.testing', 'Products.PloneTestCase']
 
 setup(name='collective.periodcriterion',
       version=version,
-      description='Additional date criterion for (old-style) Plone collections, '
-                  'that add concepts of "today", "this month", "this year"',
+      description='Add to Plone Collection content type the "this month" and "this year" criteria',
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
