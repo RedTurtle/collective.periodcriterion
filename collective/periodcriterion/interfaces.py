@@ -1,4 +1,6 @@
-from zope.interface import Interface
+# -*- coding: utf-8 -*-
 
-class IATPeriodCriteria(Interface):
+from Products.ATContentTypes.interfaces import IATTopicSearchCriterion
+
+class IATPeriodCriteria(IATTopicSearchCriterion):
     pass
