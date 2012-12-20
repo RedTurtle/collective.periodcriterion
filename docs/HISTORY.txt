@@ -4,7 +4,11 @@ Changelog
 0.2.0 (Unreleased)
 ------------------
 
-* Plone 4.2 compatibility (but still with old-style Collection)
+* Plone 4.2 compatibility for old and new Collection content type
+  [keul]
+* More pythoninc dates generation, using DateTime native methods
+  [keul]
+* Added a proper uninstall profile
   [keul]
 
 0.1.0 (2011-02-16)

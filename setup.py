@@ -1,7 +1,9 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1.0'
+version = '0.2.0.dev0'
+
+tests_require=['zope.testing', 'Products.PloneTestCase']
 
 setup(name='collective.periodcriterion',
       version=version,
@@ -13,6 +15,7 @@ setup(name='collective.periodcriterion',
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
         "Framework :: Plone",
+        "Framework :: Plone :: 4.2",
         "Programming Language :: Python",
         "Development Status :: 4 - Beta",
         ],
@@ -27,8 +30,11 @@ setup(name='collective.periodcriterion',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          # -*- Extra requirements: -*-
+          'Products.CMFPlone>=4.2',
+          'plone.app.querystring',
       ],
+      tests_require=tests_require,
+      extras_require=dict(test=tests_require),
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]

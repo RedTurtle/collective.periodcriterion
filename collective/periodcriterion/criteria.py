@@ -23,44 +23,44 @@ def getBounds(date, value):
         >>> from collective.periodcriterion.criteria import getBounds
         >>> from DateTime import DateTime
         >>> getBounds(DateTime('2011/02/14'), 'today')
-        (DateTime('2011/02/14'), DateTime('2011/02/14 23:59:59 GMT+1'))
+        (DateTime('2011/02/14 00:00:00 GMT+1'), DateTime('2011/02/14 23:59:59 GMT+1'))
 
         Hour is ignored completly
         
         >>> getBounds(DateTime('2011/02/14 23:59:59'), 'today')
-        (DateTime('2011/02/14'), DateTime('2011/02/14 23:59:59 GMT+1'))
+        (DateTime('2011/02/14 00:00:00 GMT+1'), DateTime('2011/02/14 23:59:59 GMT+1'))
         
         Check month
 
         >>> getBounds(DateTime('2011/02/14'), 'this_month')
-        (DateTime('2011/02/01'), DateTime('2011/02/28 23:59:59 GMT+1'))
+        (DateTime('2011/02/01 00:00:00 GMT+1'), DateTime('2011/02/28 23:59:59 GMT+1'))
         >>> getBounds(DateTime('2011/02/01'), 'this_month')
-        (DateTime('2011/02/01'), DateTime('2011/02/28 23:59:59 GMT+1'))
+        (DateTime('2011/02/01 00:00:00 GMT+1'), DateTime('2011/02/28 23:59:59 GMT+1'))
         >>> getBounds(DateTime('2011/02/28'), 'this_month')
-        (DateTime('2011/02/01'), DateTime('2011/02/28 23:59:59 GMT+1'))
+        (DateTime('2011/02/01 00:00:00 GMT+1'), DateTime('2011/02/28 23:59:59 GMT+1'))
         >>> getBounds(DateTime('2011/12/25'), 'this_month')
-        (DateTime('2011/12/01'), DateTime('2011/12/31 23:59:59 GMT+1'))
+        (DateTime('2011/12/01 00:00:00 GMT+1'), DateTime('2011/12/31 23:59:59 GMT+1'))
 
         Check year
 
         >>> getBounds(DateTime('2011/02/02'), 'this_year')
-        (DateTime('2011/01/01'), DateTime('2011/12/31 23:59:59 GMT+1'))
+        (DateTime('2011/01/01 00:00:00 GMT+1'), DateTime('2011/12/31 23:59:59 GMT+1'))
 
 
     """
     if value=='today':
         today = DateTime(date.Date())
-        return (today, DateTime(today.strftime('%Y/%m/%d')+' 23:59:59'))
-    elif value=='this_month':
+        return (today.earliestTime(), today.latestTime())
+    if value=='this_month':
         month_start = DateTime('%d/%02d/01' % (date.year(), date.month()) )
         nextMonth = date.month()+1
         year = date.year()
         if nextMonth==13:
             year+=1
             nextMonth = 1
-        return (month_start, DateTime('%d/%02d/01 23:59:59' % (year, nextMonth) )-1 )
-    elif value=='this_year':
-        return (DateTime('%d/01/01' % date.year()), DateTime('%d/12/31 23:59:59' % date.year()) )            
+        return (month_start, (DateTime('%d/%02d/01' % (year, nextMonth)).latestTime())-1 )
+    if value=='this_year':
+        return (DateTime('%d/01/01' % date.year()).earliestTime(), DateTime('%d/12/31' % date.year()).latestTime())            
     return ()
 
 

@@ -8,12 +8,11 @@
   <five:registerPackage package="." initialize=".initialize" />
   <i18n:registerTranslations directory="locales" />
 
-  <!-- Register the installation GenericSetup extension profile -->
   <genericsetup:registerProfile
       name="default"
       title="Period Criterion for Collections"
       directory="profiles/default"
-      description="Additional date criterion for Collection content type"
+      description="Additional date criterion for Collections that add concepts of 'today', 'this month' and 'this year'"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   

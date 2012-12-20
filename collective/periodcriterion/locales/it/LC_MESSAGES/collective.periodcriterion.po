@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-02-16 15:06+0000\n"
+"POT-Creation-Date: 2012-12-19 16:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Luca Fabbri <keulL@redturtle.it>, 2011.\n"
 "Language-Team: RedTurtle Technology <sviluppplone@redturtle.it>\n"
@@ -20,33 +20,49 @@ msgstr ""
 msgid "A relative date criterion with defined bounds"
 msgstr "Una data relativa con limiti definiti"
 
+msgid "Additional date criterion for Collections that add concepts of 'today', 'this month' and 'this year'"
+msgstr "Criteri aggiuntivi per le collezioni che aggiungono i contetti di 'oggi', 'questo mese' e 'questo anno'"
+
+msgid "Period Criterion for Collections"
+msgstr "Criteri di Periodo per le Collezioni"
+
 #: ../profiles/default/types/ATPeriodCriteria.xml
 msgid "Period Date Criteria"
 msgstr "Criterio Periodo di Data"
 
-#: ../criteria.py:99
+#: ../criteria.py:97
 msgid "Period of time"
 msgstr "Periodo di tempo"
 
-#: ../criteria.py:71
+#: ../profiles/default/registry.xml
+msgid "The current month"
+msgstr "Il mese corrente"
+
+#: ../profiles/default/registry.xml
+msgid "The current year"
+msgstr "L'anno corrente"
+
+#: ../criteria.py:69
+#: ../profiles/default/registry.xml
 msgid "This month"
 msgstr "Questo mese"
 
-#: ../criteria.py:72
+#: ../criteria.py:70
+#: ../profiles/default/registry.xml
 msgid "This year"
 msgstr "Quest'anno"
 
-#: ../criteria.py:70
+#: ../criteria.py:68
 msgid "Today"
 msgstr "Oggi"
 
 #. Default: "Select the period inside which the date must be."
-#: ../criteria.py:83
+#: ../criteria.py:81
 msgid "help_date_criteria_value"
 msgstr "Seleziona il periodo entro il quale deve essere la data."
 
 #. Default: "Which period"
-#: ../criteria.py:82
+#: ../criteria.py:80
 msgid "label_date_criteria_value"
 msgstr "Quale periodo"
 

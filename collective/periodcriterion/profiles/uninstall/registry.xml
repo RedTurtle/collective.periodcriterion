@@ -1,0 +1,62 @@
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="collective.periodcriterion">
+
+    <records interface="plone.app.querystring.interfaces.IQueryOperation"
+             prefix="plone.app.querystring.operation.date.this_month"
+			 remove="True">
+    </records>
+
+    <records interface="plone.app.querystring.interfaces.IQueryOperation"
+             prefix="plone.app.querystring.operation.date.this_year"
+			 remove="True">
+    </records>
+
+    <records interface="plone.app.querystring.interfaces.IQueryField"
+             prefix="plone.app.querystring.field.created">
+       <value key="operations" purge="False">
+           <element>plone.app.querystring.operation.date.this_month</element>
+           <element>plone.app.querystring.operation.date.this_year</element>
+       </value>
+    </records>
+
+    <records interface="plone.app.querystring.interfaces.IQueryField"
+             prefix="plone.app.querystring.field.effective">
+       <value key="operations" purge="False">
+           <element>plone.app.querystring.operation.date.this_month</element>
+           <element>plone.app.querystring.operation.date.this_year</element>
+       </value>
+    </records>
+
+    <records interface="plone.app.querystring.interfaces.IQueryField"
+             prefix="plone.app.querystring.field.end">
+       <value key="operations" purge="False">
+           <element>plone.app.querystring.operation.date.this_month</element>
+           <element>plone.app.querystring.operation.date.this_year</element>
+       </value>
+    </records>
+
+    <records interface="plone.app.querystring.interfaces.IQueryField"
+             prefix="plone.app.querystring.field.modified">
+       <value key="operations" purge="False">
+           <element>plone.app.querystring.operation.date.this_month</element>
+           <element>plone.app.querystring.operation.date.this_year</element>
+       </value>
+    </records>
+
+    <records interface="plone.app.querystring.interfaces.IQueryField"
+             prefix="plone.app.querystring.field.expires">
+       <value key="operations" purge="False">
+           <element>plone.app.querystring.operation.date.this_month</element>
+           <element>plone.app.querystring.operation.date.this_year</element>
+       </value>
+    </records>
+
+    <records interface="plone.app.querystring.interfaces.IQueryField"
+             prefix="plone.app.querystring.field.start">
+       <value key="operations" purge="False">
+           <element>plone.app.querystring.operation.date.this_month</element>
+           <element>plone.app.querystring.operation.date.this_year</element>
+       </value>
+    </records>
+
+</registry>

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-02-16 15:06+0000\n"
+"POT-Creation-Date: 2012-12-19 16:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,37 +21,49 @@ msgstr ""
 msgid "A relative date criterion with defined bounds"
 msgstr ""
 
+msgid "Additional date criterion for Collections that add concepts of 'today', 'this month' and 'this year'"
+msgstr ""
+
+msgid "Period Criterion for Collections"
+msgstr ""
+
 #: ../profiles/default/types/ATPeriodCriteria.xml
 msgid "Period Date Criteria"
 msgstr ""
 
-#: ../criteria.py:99
+#: ../criteria.py:97
 msgid "Period of time"
 msgstr ""
 
-#: ../profiles/default/types/ATPeriodCriteria.xml
-msgid "References"
+#: ../profiles/default/registry.xml
+msgid "The current month"
 msgstr ""
 
-#: ../criteria.py:71
+#: ../profiles/default/registry.xml
+msgid "The current year"
+msgstr ""
+
+#: ../criteria.py:69
+#: ../profiles/default/registry.xml
 msgid "This month"
 msgstr ""
 
-#: ../criteria.py:72
+#: ../criteria.py:70
+#: ../profiles/default/registry.xml
 msgid "This year"
 msgstr ""
 
-#: ../criteria.py:70
+#: ../criteria.py:68
 msgid "Today"
 msgstr ""
 
 #. Default: "Select the period inside which the date must be."
-#: ../criteria.py:83
+#: ../criteria.py:81
 msgid "help_date_criteria_value"
 msgstr ""
 
 #. Default: "Which period"
-#: ../criteria.py:82
+#: ../criteria.py:80
 msgid "label_date_criteria_value"
 msgstr ""
 

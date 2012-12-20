@@ -42,12 +42,8 @@ Tested with *Plone 3.3*.
 TODO
 ====
 
-* More tests (the few there are GMT+1 specific)
-* Right now the calculation of dates is crappy. Think about replace the ``DateTime`` use with
-  standard ``datetime`` module.
-  Are Collection still working with ``datetime``?
-* Adding Plone 4 compatibility
-* Translations issues (I fear will be worst when using on Plone 4)
+* Fix tests (the few there are GMT+1 specific)
+* Right now the calculation of dates is sometimes crappy.
 
 Credits
 =======
@@ -65,8 +61,8 @@ Authors
 
 This product was developed by RedTurtle Technology team.
 
-.. image:: http://www.redturtle.net/redturtle_banner.png
+.. image:: http://www.redturtle.it/redturtle_banner.png
    :alt: RedTurtle Technology Site
-   :target: http://www.redturtle.net/
+   :target: http://www.redturtle.it/
 
 
