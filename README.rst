@@ -3,41 +3,43 @@
 Introduction
 ============
 
-This product add a new criteria for dates inside Plone, someway similar to the "*Relative date*" ones,
-but beeing able to perform some impossible search if using standard date criteria.
+This product add a two new criteria for dates inside Plone, someway similar to the "*Today*" ones.
 
 What you can't do with the default Plone relative criteria is configure a Collection that:
 
-* show all events that begin today
 * show all news published this month
 * show all file modified this year
 * ... and so on.
 
-The today, this month and this year values change automatically.
+As default Plone "today" criteria, the "this month" and "this year" values are taken automatically.
 
 How to use
 ==========
 
 The new criteria displays a simple selection between:
 
-* Today
 * This year
 * This month
 
-.. image:: http://keul.it/images/plone/collective.periodcriterion-0.1.0.png
+.. figure:: https://blog.redturtle.it/pypi-images/collective.periodcriterion/collective.periodcriterion-0.2.0-01.png/image_preview
+   :target: https://blog.redturtle.it/pypi-images/collective.periodcriterion/collective.periodcriterion-0.2.0-01.png
    :alt: Period of time criteria
 
-Where those values are relative to the current date.
+   New criteria added on Collection
 
-Going back to first example of the previous section: at 12:55 PM of January 21 I will see an event that
-starts at 8 AM of January 21.
-As soon as I visit the Collection again at midnight of January 22 I will no see the event again, but
-automatically begin to see all events that starts January 22
+Also, this product will backport the "Today" criteria added on new style collection content type to the old
+Archetypes based ones. 
+
+.. figure:: https://blog.redturtle.it/pypi-images/collective.periodcriterion/collective.periodcriterion-0.2.0-02.png/image_preview
+   :target: https://blog.redturtle.it/pypi-images/collective.periodcriterion/collective.periodcriterion-0.2.0-02.png
+   :alt: Period of time criteria (on old collections)
+
+   New criteria added on old-style Collection
 
 Requirements
 ============
 
-Tested with *Plone 3.3*.
+Tested with *Plone 4.2* and *Plone 4.3*.
 
 TODO
 ====
