@@ -10,6 +10,8 @@ Changelog
   [keul]
 * Added a proper uninstall profile
   [keul]
+* Support for "Site Administrator" role
+  [keul]
 
 0.1.0 (2011-02-16)
 ------------------
